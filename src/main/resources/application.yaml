@@ -1,3 +1,10 @@
 camunda.bpm.admin-user:
   id: j
   password: j
+
+
+
+spring:
+  output:
+    ansi:
+      enabled: always
