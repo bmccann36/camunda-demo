@@ -20,13 +20,12 @@ public class AutoRunLocal {
      */
     @EventListener(ApplicationReadyEvent.class)
     public void start() {
-
             Map<String, Object> vars = new HashMap();
             vars.put("carModel", "c-class");
-            vars.put("simulateNetworkFail", true);
+            vars.put("dealerId", "103");
+//            vars.put("simulateNetworkFail", true);
 
-            runtimeService.startProcessInstanceByKey("cmnda-demo-process", vars);
-
+//            runtimeService.startProcessInstanceByKey("cmnda-demo-process", vars);
 
     }
 }

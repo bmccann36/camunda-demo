@@ -15,8 +15,7 @@ public class ProcessPayment implements JavaDelegate {
     public void execute(DelegateExecution execution) throws Exception {
         System.out.println("processing payment");
 
-
-
+        //? get carModel string from process variable
         String carModel = (String) execution.getVariable("carModel");
 
         Set carTypes = getCarTypes();
